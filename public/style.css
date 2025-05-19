@@ -1,0 +1,401 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333; 
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.navbar {
+  background: rgb(4, 71, 4);
+  color: #fff;
+  height: 100px;
+}
+
+.navbar .logo {
+  font-size: x-large;
+  font-weight: bold;
+ 
+}
+
+.navbar .logodiv p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: -5px;
+ 
+}
+.navbar img {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  margin-right: 10px;
+  margin: -1;
+  animation: flipdiv 2s infinite;
+}
+.navbar .logodiv {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .container.logodiv {
+ height: 100%;
+padding: 5px;
+}
+
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.navbar a:hover {
+  color: lightblue;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 0px;
+}
+
+.header {
+  background: rgb(4, 71, 4);
+  color: #fff;
+  min-height: 400px;
+  background-image: url("/op.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.header .container p {
+  color: yellow;
+}
+
+
+ .boarder img {
+  max-width: 800px;
+  min-height: 330px;
+  margin: 5px;
+  justify-self:centrr;
+  border-radius: 10px;
+  
+}
+
+ .boarder {
+  width: 1000px;
+  height: 350px;
+  margin: 5px;
+  border: 1px solid #fff;
+  padding: 5px 0px;
+  background-color: transparent;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  justify-content: center;
+  justify-self:centrr;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: animate 16s ease-in-out infinite;
+}
+
+.exec {
+  display: flex;
+  justify-self: center;
+}
+
+.boarders img {
+  max-width: 185px;
+  min-height: 330px;
+  margin: 5px;
+  justify-self:center;
+  border-radius: 10px;
+}
+
+
+
+
+ .boarders {
+  width: 200px;
+  height: 350px;
+  margin: 5px;
+  border: 1px solid #fff;
+  padding: 5px 0px;
+  background-color: transparent;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  justify-content: center;
+  justify-self:center;
+  align-items: center;
+}
+
+
+.header button {
+  text-decoration: none;
+  flex: 1;
+  background: black;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px 2px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 15px 20px; 
+  width: 150px;
+  font-size:20px;
+}
+.header button a {
+  text-decoration: none;
+ color: #fff;
+}
+
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 30px;
+}
+
+.boxes .container  {
+align-items: center;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+overflow-y: hidden;
+max-height: 45rem;
+margin-top: 20px;
+
+}
+
+
+.box {
+  background: rgb(4, 71, 4);
+  color: #fff;
+  border-radius: 10px;
+  margin: 10px 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  width: 310px;
+  height: auto;
+  justify-self: center;
+}
+
+.box i {
+  margin-right: 10px;
+}
+
+.boxes .schools{
+ font-size: 30px;
+ text-align: center;
+ margin-top: 10px;
+ margin-bottom: -30px;
+ }
+ 
+ .boxes .box h2{
+  margin-bottom: -2px;
+  font-size: 20px;
+  }
+
+  .languages .card:hover {
+    transform: translateY(-15px);
+}
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  margin: 10px;
+}
+
+.languages .flex {
+  flex-wrap: wrap;
+}
+
+.languages .card {
+  text-align: center;
+  margin: 18px 15px ;
+  transition: transform 0.2s ease-in;
+}
+
+.glass-container {
+  width: 330px;
+  height: 410px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid #fff;
+  
+}
+
+.mainli div.hide {
+  display: none;
+}
+
+.flip {
+  margin: -1;
+  animation: flipdiv 2s infinite;
+}
+
+@keyframes flipdiv {
+  50% {
+      transform: rotateX(180deg);
+  }
+  to {
+      transform: rotateX(360deg);
+  }
+}
+
+@keyframes flipdiv {
+  50% {
+      transform: rotateY(180deg);
+  }
+  to {
+      transform: rotateY(360deg);
+  }
+}
+ 
+  @keyframes animate {
+    0%,100%{
+      background-image: url(photpd..png)
+    }
+    25%{
+      background-image: url(photpe..png)
+    }
+    50%{
+      background-image: url(photpf..png)
+    }
+    75%{
+      background-image: url(photpx..png)
+    }
+  }
+
+
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  .exec {
+    display: block;
+    text-align: center;
+  }
+
+  .exec .boarders {
+    width: 250px;
+    margin: 10px;
+  }
+  .exec .boarders img{
+    max-width: 200px;
+  }
+
+  .navbar .container .logodiv {
+    display: block;
+    text-align: center;
+    text-align: center;
+    
+  }
+
+  .navbar  {
+  height: 170px; 
+  justify-self: center;
+  width: 100%;
+  padding-top: 15px;
+  
+  }
+
+  .header img {
+    max-width: 270px;
+}
+    
+.navbar .container {
+  display: block;
+  justify-content: center;  
+  justify-self: center;
+  position: relative;
+}
+
+.boarder {
+  width: 320px;
+  height: 350px;
+  margin: 0px;
+  border: none;
+  
+}
+
+
+.navbar ul li {
+  margin-left: 0px;
+  margin-top: 5px;
+}
+
+
+.navbar ul  {
+  background-color: #2f6637;
+  width: 80%;
+  justify-self: center;
+  height: 35px;
+}
+
+.nav {
+  margin-top: 20px;
+  justify-content: center;
+  z-index: 10;
+}
+
+.container {
+  padding: 0 10px;
+}
+
+}

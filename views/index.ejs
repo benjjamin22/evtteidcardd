@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>ISEMB ID SLIP</title>
+  </head>
+  <body>
+    <nav  class="navbar">
+      <div class="container">
+        <div class="logodiv">
+          <img src="./btn.jpg" alt="" />
+          <div style="display: block;">
+        <p style="font-size: 15px;color: yellow;">Imo Secondary Education</p>
+        <div class="logo">Management Board</div>
+      </div>
+      </div>
+        <ul class="nav">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/id">ID Slip</a>
+          </li>
+          <li>
+            <a href="/schools">Schools</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="header">
+      <div class="container">
+        <div>
+          <h1>Imo Secondary Education Management Board </h1>
+          <h2 style="margin-top: -10px;color: black;">Students identification Slip Portal</h2>
+         
+          <p style="margin-top: -10px;">
+            Click the button below to DOWNLOAD your id slip
+          </p> 
+          <a href="/id"><button>Enter</button></a>
+        </div>
+        <div class="boarder"></div>
+      </div>
+    </header>
+    <div class="container">
+    <div class="exec">
+      <div class="boarders"><img src="./photp1..png" alt="" /></div>
+      <div class="boarders"><img src="./photp..png"alt="" /></div>
+      <div class="boarders"><img src="./photp3..png" alt="" /></div>
+      <div class="boarders"><img src="./photp6..png" alt="" /></div>
+    </div>
+   </div>
+   
+    <section class="boxes"> 
+      <h2 class="schools">Schools Directory</h2>
+      <div class="container">
+        <div class="mainli" id ="main" style="display: flex;flex-wrap: wrap;">
+        </div>
+      </div>
+    </section>
+    <div class="container" style="margin-bottom: 20px;margin-top: 20px;">
+    <section style="justify-content: center;align-items: center; justify-self:center;text-align: center; height: 50px; width: 200px;background-color: rgb(5, 54, 5);border-radius: 10px;padding-top: 10px;">  
+      <a 
+        href="/schools"
+        style="text-decoration: none;color:white;font-size: 20px;"
+        >View Schools</a>
+    </section>
+  </div>
+    <section class="languages" style="margin-top: 15px;margin-bottom: 20px;">
+      <div class="container flex " style="display: flex;justify-content: center;">
+          <div class="card ">
+              <h4>WAEC</h4>
+              <a href="#"><img style="height: 75px; width: 80px; " src="./btn.jpg " alt=" "></a>
+          </div>
+          <div class="card ">
+              <h4>NECO</h4>
+              <img style="height: 75px; width: 80px; " src="./btn.jpg " alt=" ">
+          </div>
+          <div class="card ">
+              <h4>NABTEB</h4>
+              <a href="#"><img style="height: 75px; width: 80px; " src="./btn.jpg " alt=" "></a>
+          </div>
+          <div class="card ">
+              <h4>JAMB</h4>
+              <a href="#"><img style="height: 75px; width: 80px; " src="./btn.jpg " alt=" "></a>
+          </div>
+      </div>
+  </section>
+    
+  <script>
+
+const search = document.getElementById('School');
+const main = document.getElementById('main');
+const form = document.getElementById('form')
+url = '/school'
+
+const listItems = []
+
+getData()
+
+search.addEventListener('input', (e) => filterData(e.target.value));
+
+async function getData() {
+    const res = await fetch(url)
+    const data= await res.json()
+
+    // Clear result
+    main.innerHTML = ''
+
+    data.forEach(user => {
+        const div = document.createElement('div')
+        listItems.push(div)
+        div.innerHTML = `<a style="text-decoration:none;" onclick="movieselected('${user.id}')"href="#">
+        <div class="box">
+              <div style="display: flex;margin: 2px 0px;align-items: center;">
+                    <img src="./inst.PNG" style="width: 18px;height: 18px;"><h2 style="margin-left: 10px;font-size: 17px;color:white;">${user.School}</h2>
+                  </div>
+                  <div style="display: flex;margin: 2px 0px;align-items: center;">
+                    <img src="./loc.PNG" style="width: 18px;height: 18px;"><p style="margin-left: 10px;font-size: 14px;color:white;">${user.address}</p>
+                  </div>
+                  <div style="display: flex;align-items: center;">
+                    <div style="display: flex;align-items: center; "><img src="./stud.PNG" style="width: 18px;height: 18px;"><p style="margin-left: 10px;font-size: 14px;color:white;">${user.Type}</p></div>
+                    <div style="display: flex;align-items: center;margin-left: 40px;"><img src="./tell.PNG" style="width: 18px;height: 18px;"><p style="margin-left: 10px;font-size: 14px;color:white;">${user.contact}</p></div>
+                  </div> 
+        </div> </a>`
+        main.appendChild(div)
+
+    })
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+  const fadeElement = document.querySelectorAll(".boarders img");
+
+  function checkvisible(){
+    fadeElement.forEach(element =>{
+      const rect = element.getBoundingClientRect();
+      const windowheight = (window.innerHeight || document.documentElement.clientHeight);
+      if (rect.top <= windowheight){
+        element.classList.add(("visible"));
+      }
+    })
+  }
+  window.addEventListener("scroll", checkvisible);
+  checkvisible()
+})
+
+  </script>
+ 
+  </body>
+</html>>

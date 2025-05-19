@@ -1,0 +1,93 @@
+[
+    {
+        
+        "_id": "6730b58e42f902d4fb6e363d",
+        "School": "OWERRI GIRLS SEC. SCHOOL ",
+        "address": "Port Harcort road, owerri, Imo",
+        "Type": "Girls only",
+        "contact": "08037722780",
+        "sn": 1,
+        "__v": 0
+    },
+    {
+        
+        "_id": "6730b58e42f902d4fb6e353d",
+        "School": "CITY GIRLS SEC. SCHOOL ",
+        "address": "Ikenegbu Harcort road, owerri, Imo",
+        "Type": "Boys & Girls",
+        "contact": "08047722780",
+        "sn": 2,
+        "__v": 0
+    },
+    {
+        
+        "_id": "6730b58e42f902d4fb6e353d",
+        "School": "IKENEGBU GIRLS SEC. SCH ",
+        "address": "Aba road, owerri, Imo",
+        "Type": "Girls only",
+        "contact": "08047422780",
+        "sn": 2,
+        "__v": 0
+    },
+    {
+        
+        "_id": "6730b58e42f902d4fb6e353d",
+        "School": "HOLY GHOẞT SEC. SCHOOL ",
+        "address": "Assumpta road, owerri, Imo",
+        "Type": "Boys only",
+        "contact": "08044722780",
+        "sn": 2,
+        "__v": 0
+    },
+    {
+        
+        "_id": "6730b58e42f902d4fb6e353d",
+        "School": "Akwakuma GIRLS SEC. SCH ",
+        "address": "Orlu road, owerri, Imo",
+        "Type": "Girls only",
+        "contact": "08047422780",
+        "sn": 2,
+        "__v": 0
+    },
+    {
+        
+        "_id": "6730b58e42f902d4fb6e353d",
+        "School": "HOLY GHOẞT SEC. SCHOOL ",
+        "address": "Assumpta road, owerri, Imo",
+        "Type": "Day",
+        "contact": "08044722780",
+        "sn": 2,
+        "__v": 0
+    },
+    {
+        
+        "_id": "6730b58e42f902d4fb6e353d",
+        "School": "IKENEGBU GIRLS SEC. SCH ",
+        "address": "Aba road, owerri, Imo",
+        "Type": "Girls only",
+        "contact": "08047422780",
+        "sn": 2,
+        "__v": 0
+    },
+    {
+        
+        "_id": "6730b58e42f902d4fb6e353d",
+        "School": "HOLY GHOST SEC. SCHOOL ",
+        "address": "Assumpta road, owerri, Imo",
+        "Type": "Girls only",
+        "contact": "08044722780",
+        "sn": 2,
+        "__v": 0
+    },
+    {
+        
+        "_id": "6730b58e42f902d4fb6e353d",
+        "School": "HOLY GHOST SEC. SCHOOL ",
+        "address": "Assumpta road, owerri, Imo",
+        "Type": "Girls only",
+        "contact": "08044722780",
+        "sn": 2,
+        "__v": 0
+    }
+]
+

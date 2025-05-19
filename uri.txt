@@ -1,0 +1,22 @@
+echo "# evtteidcardd" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/benjjamin22/evtteidcardd.git
+git push -u origin main
+
+
+function generateUnique9DigitNumbers(count) {
+  const seen = new Set();
+
+  while (seen.size < count) {
+    let num = Math.floor(Math.random() * 1_000_000_000);
+    seen.add(num.toString().padStart(9, '0'));
+  }
+
+  return Array.from(seen);
+}
+
+const randomList = generateUnique9DigitNumbers(1000);
+console.log(randomList);
