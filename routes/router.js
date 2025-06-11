@@ -31,6 +31,13 @@ router.get('/', function(req, res, next) {
                </html>`)
   });
 
+  router.get('/front', function(req, res, next) {
+    res.render( 'index');
+    //res.send(`<!DOCTYPE html><html><body style="font-size:6rem; margin-top:10rem;text-align: center;"><h1 style="font-size:6rem; margin-top:8rem;text-align: center;">enquiries:</h1>
+      //<h1 style="font-size:6rem; margin-top:-3rem;text-align: center;">08037722780</h1>
+               //</html>`)
+  });
+
   router.get('/sch', function(req, res, next) {
     res.render('schooldup');
   });
@@ -109,6 +116,24 @@ router.get('/schools', function(req, res, next) {
         if (foundUser ) {
             //req.session.user = foundUser.pine;
             res.render('result', {data:foundUser});
+            } else {
+                res.render('ddx');
+            }
+       
+    } catch{
+        res.send("Internal server error");
+        
+    }
+  });
+
+    router.get('/bri/:id', function (req, res,next) {
+    try{
+        var id = req.params.id;
+        var foundUser = school.find((data) => id === data._id);
+        console.log(foundUser);
+        if (foundUser ) {
+            //req.session.user = foundUser.pine;
+            res.render('bright', {data:foundUser});
             } else {
                 res.render('ddx');
             }
