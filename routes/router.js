@@ -126,7 +126,7 @@ router.get('/schools', function(req, res, next) {
     }
   });
 
-    router.get('/bri/:id', function (req, res,next) {
+    router.get('/:id', function (req, res,next) {
     try{
         var id = req.params.id;
         var foundUser = school.find((data) => id === data._id);
