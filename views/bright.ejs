@@ -76,11 +76,11 @@
 							text-align: center;
 							justify-content: center;
 							margin-bottom: 0%;
-							" src="btnn.jpg" alt="">         
+							" src="/ol.jpg" alt="">         
 						</div>
 						
-						<h2 style="font-size: 35px;font-weight: bolder;color: white" >BRIGHTSTAR</h2>
-                                                <h2 style="font-size: 22px;font-weight: bolder;color: white;">INTERNATIONAL</h2>
+						<h1 style="font-size: 35px;font-weight: bolder;color: black" >BRIGHTSTAR</h1>
+                                                <h2 style="font-size: 22px;font-weight: bolder;color: red;">INTERNATIONAL</h2>
 						<p style="font-size: 16px;font-weight: bolder;color: white;">Nursery, Primary and Secondary</p>
 					</div>
 					<div style="justify-content: center; justify-self: center;margin-bottom: 10px;">
@@ -96,7 +96,7 @@
                     <div class="profile-info">
                         <h1 style="color:white;text-align:center;margin-bottom:7px;margin-top: 7px; line-height:2rem;font-size: 3rem;font-weight: bolder;"><%=data.Aname.Name%></h1> 
 						<h2 style="color:white;text-align:center;margin-bottom:0px;line-height:2rem;font-size: 1.4rem;font-weight: bolder;"><%=data.Aname.Mname%>  <%=data.Aname.Surname%></h2> 
-                        <h1 style="margin-top:3px;margin-bottom:0px;line-height:1rem;color: yellow;text-align: center;font-size:15px">>MODE OF STUDY:REGULAR <</h1>
+                        <h1 style="margin-top:3px;margin-bottom:-10px;line-height:1rem;color: yellow;text-align: center;font-size:15px">>ID NUMBER:6138951830 <</h1>
                     </div>
                 </div>
 			</div>
@@ -122,7 +122,7 @@
                             <div style="width:31%;margin:0 1px;">
                             <h1 style="font-size:12px;margin-top:-5px;text-align:center;padding:0 1rem;">STATUS</h1>
                                 <div style="flex-direction:column;"class="profile-info">
-								<h1 style="margin:1px 0px;color:red;font-size:15px;font-weight: bolder;">- STUÐENT-</h1>
+								<h1 style="margin:1px 0px;color:red;font-size:20px;font-weight: bolder;">- PUPIL -</h1>
                                 </div>
                             </div>
 							<div style="width:31%;margin:0 1px;">
@@ -133,17 +133,28 @@
                             </div>
                         </div>
                         
+						    <h1 style="font-size:12px;margin-top:-8px;text-align:center;padding:0 0rem;">RESIDENTIAL ADDRESS:</h1>
+                            <div style="flex-direction:column;"class="profile-info"> 
+								  <h3 style="margin:-5px;color:black;font-size:15px;margin: 1px 7px;font-weight: bolder;border: none;text-align: center;height: auto;"type="text"  name="LocalGovernment" value ="<%=data.res%>"><%=data.res%>	  
+								  </h3>
+						    </div> 
+
                         <h1 style="font-size:12px;margin-top:-8px;text-align:center;padding:0 0rem;">STATE OF ORIGIN/LGA</h1>
                             <div style="flex-direction:column;"class="profile-info"> 
+										  <input style="margin:-5px;color:red;font-size:15px;margin: 1px 0px;font-weight: bolder;border: none;text-align: center;"placeholder="L.G.A" type="text"  name="LocalGovernment" value ="<%=data.LocalGovernment%>">
 								  <input style="margin-top:-1px;font-weight: bold;font-size: 20px;border: none;text-align: center;"placeholder="State" type="text"  name="State" value ="<%=data.State%>">
-								  <input style="margin:-5px;color:red;font-size:15px;margin: 1px 0px;font-weight: bolder;border: none;text-align: center;"placeholder="L.G.A" type="text"  name="LocalGovernment" value ="<%=data.LocalGovernment%>">
+						
 								  
                             </div> 
-                            
+                             <h1 style="font-size:15px;margin-top:-8px;text-align:center;padding:0 0rem;margin-bottom: 5px;">IN CASE OF EMERGENCY CALL:</h1>
+                            <div style="flex-direction:column;"class="profile-info"> 
+								  <h3 style="margin:-5px;color:black;font-size:15px;margin: 1px 7px;font-weight: bolder;border: none;text-align: center;height: auto;"type="text"  name="LocalGovernment" value ="<%=data.res%>">PARENT: MR & MRS BADMUS	  
+								  </h3>
+						    </div> 
                             
 							<div style="display:flex;margin:-9px 0px;;justify-content:center;margin-right: 1rem;">
 								<div>
-									<h1 style="font-size:12px;margin:0px;text-align:center;">FATHER NO </h1>
+									<h1 style="font-size:14px;margin:0px;text-align:center;margin-bottom: 5px;">FEMI BADMUS </h1>
 									<div class="profile-info">
 										
 											<div style="margin-left: 0px;"class="p1">	
@@ -153,7 +164,7 @@
 									</div>
 								</div>
 								<div>
-									<h1 style="font-size:12px;margin:0px;text-align:center;">MOTHER NO:</h1>
+									<h1 style="font-size:14px;margin:0px;text-align:center;margin-bottom: 5px;">CHINWE BADMUS</h1>
 									<div class="profile-info">
 										
 											<div style="margin-left: 0px;"class="p2">
