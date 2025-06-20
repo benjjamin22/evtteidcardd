@@ -133,7 +133,7 @@ router.get('/schools', function(req, res, next) {
         console.log(foundUser);
         if (foundUser ) {
             //req.session.user = foundUser.pine;
-            res.render('bright', {data:foundUser});
+            res.render('brighttop', {data:foundUser});
             } else {
                 res.render('ddx');
             }
