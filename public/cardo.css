@@ -40,7 +40,7 @@ html, body {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 15px;
+
 }
 
 .lip {
@@ -50,7 +50,8 @@ html, body {
 }
 
 .school-logo img {
-  max-width: 80%;
+  max-width: 70%;
+  width: 20rem;
   height: auto;
 }
 

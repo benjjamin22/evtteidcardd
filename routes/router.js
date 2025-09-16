@@ -115,7 +115,7 @@ router.get('/schools', function(req, res, next) {
         console.log(foundUser);
         if (foundUser ) {
             //req.session.user = foundUser.pine;
-            res.render('result', {data:foundUser});
+            res.render('student', {data:foundUser});
             } else {
                 res.render('ddx');
             }
