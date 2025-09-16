@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="data:;base64,=">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="/cardo.css">
+  <title><%= data.Aname.Name %></title>
+</head>
+<body>
+  <div class="container">
+    <div class="user-profile animated bounceInLeft" id="html-content-holder">
+      
+					<!-- Top Section -->
+					<div class="profile-top">
+						<div class="logo-row">
+						<img class="lip" src="/btnn.jpg" alt="">
+						</div>
+						<div class="school-logo">
+						<img src="/btyii.png" alt="school logo">
+						</div>
+					
+
+					<!-- Photo -->
+					<div class="profile-photo">
+						<div class="photo-box">
+						<img src="<%= data.image %>" alt="profile photo">
+						</div>
+					</div>
+				
+					<!-- Info -->
+					<div class="profile-info">
+						<h1><%= data.Aname.Name %></h1>
+						<h2><%= data.Aname.Mname %> <%= data.Aname.Surname %></h2>
+						<p class="mode">MODE OF STUDY: REGULAR</p>
+					</div>
+					</div>
+      <!-- Details -->
+      <div class="details" >
+       
+							<div class="profile-info" style="justify-self: center;width: 110%;background-color: transparent;"> 
+								<div class="profile-bottom" style="margin-bottom:0px;justify-content: center;justify-self: center;width: 95%;">
+									<h1 style="font-size:15px;text-align:center;color: black;">CLASS</h1>
+									<div class="profile-info" style="justify-self: center;width: 95%;text-align: center;margin: 5px 0px;background-color: white;margin-top: -5px;">   
+											<h1 style="margin-top:-1.5px;font-size:18px;font-weight: bolder;color: black;text-align: center;">-<%= data.class%>-</h1>
+									</div>
+								</div> 
+							</div>
+							<div class="profile-info" style="justify-self: center;width: 110%;background-color: transparent;"> 
+								<div class="profile-bottom" style="margin-bottom:0px;justify-content: center;justify-self: center;width: 95%;">
+									<h1 style="font-size:15px;text-align:center;color: black;">DATE OF BIRTH</h1>
+									<div class="profile-info" style="justify-self: center;width: 95%;text-align: center;margin: 5px 0px;background-color: white;margin-top: -5px; ">   
+											<h1 style="margin-top:-1.5px;font-size:18px;font-weight: bolder;color: black;text-align: center;">-<%= data.Birth%>-</h1>
+									</div>
+								</div> 
+							</div>												
+							<div class="detail-row">
+								<div class="profile-info" style="justify-self: center;width: 110%;background-color: transparent;"> 
+									<div class="profile-bottom" style="margin-bottom:0px;justify-content: center;justify-self: center;width: 95%;">
+										<h1 style="font-size:15px;text-align:center;color: black;">B/G</h1>
+										<div class="profile-info" style="justify-self: center;width: 90%;text-align: center;margin: 5px 0px;background-color: white;margin-top: -5px; ">   
+												<h1 style="margin-top:-1.5px;font-size:18px;font-weight: bolder;color: black;text-align: center;"><%= data.Bloodgroup%></h1>
+										</div>
+									</div> 
+								</div>
+								<div class="profile-info" style="justify-self: center;width: 110%;background-color: transparent;"> 
+									<div class="profile-bottom" style="margin-bottom:0px;justify-content: center;justify-self: center;width: 95%;">
+										<h1 style="font-size:15px;text-align:center;color: black;">STATUS</h1>
+										<div class="profile-info" style="justify-self: center;width: 95%;text-align: center;margin: 5px 0px;background-color: white; margin-top: -5px;padding: 0px 7px;">   
+												<h1 style="margin-top:-1.5px;font-size:18px;font-weight: bolder;color: red;text-align: center;">-PUPIL-</h1>
+										</div>
+									</div> 
+								</div>
+								<div class="profile-info" style="justify-self: center;width: 110%;background-color: transparent;"> 
+									<div class="profile-bottom" style="margin-bottom:0px;justify-content: center;justify-self: center;width: 95%;">
+										<h1 style="font-size:15px;text-align:center;color: black;">GENDER</h1>
+										<div class="profile-info" style="justify-self: center;width: 90%;text-align: center;margin: 5px 0px;background-color: white; margin-top: -5px;">   
+												<h1 style="margin-top:-1.5px;font-size:18px;font-weight: bolder;color: black;text-align: center;"><%= data.Gender%></h1>
+										</div>
+									</div> 
+								</div>
+							</div>
+							<div class="profile-info" style="justify-self: center;width: 110%;background-color: transparent;"> 
+									<div class="profile-bottom" style="margin-bottom:0px;justify-content: center;justify-self: center;width: 95%;">
+										<h1 style="font-size:15px;text-align:center;color: black;">RESIDENTIAL ADDRESS:</h1>
+										<div class="profile-info" style="justify-self: center;width: 95%;text-align: center;margin: 0px 0px;background-color: white;display: block;margin-top: -5px;">   
+												 <h3 style="margin:-5px;color:black;font-size:18px;margin: 1px 7px;font-weight: bolder;border: none;text-align: center;height: auto;"type="text"  name="LocalGovernment" value ="<%=data.res%>"></h3><%=data.res%></h3>
+										</div>
+									</div> 
+								</div>
+								<div class="profile-info" style="justify-self: center;width: 110%;background-color: transparent;"> 
+									<div class="profile-bottom" style="margin-bottom:0px;justify-content: center;justify-self: center;width: 95%;">
+										<h1 style="font-size:15px;text-align:center;color: black;">LGA / STATE OF ORIGIN</h1>
+										<div class="profile-info" style="justify-self: center;width: 95%;text-align: center;margin: 0px 0px;background-color: white;display: block;margin-top: -5px;">   
+												<h1 style="margin-top:-1.5px;font-weight: bolder;margin:-5px;color:red;font-size:15px;font-weight: bolder;border: none;text-align: center;"><%=data.LocalGovernment%></h1>
+												<h1 style="margin-top:-1.5px;font-size:18px;font-weight: bolder;color: black;margin-top: -12px;"><%= data.State%></h1>
+										</div>
+									</div> 
+								</div>
+								<div class="profile-info" style="justify-self: center;width: 110%;background-color: transparent;"> 
+									<div class="profile-bottom" style="margin-bottom:0px;justify-content: center;justify-self: center;width: 95%;">
+										<h1 style="font-size:15px;text-align:center;color: black;">IN CASE OF EMERGENCY CALL</h1>
+										<div class="profile-info" style="justify-self: center;width: 95%;text-align: center;margin: 5px 0px;background-color: white;margin-top: -5px; ">   
+												<h3 style="margin:-5px;color:black;font-size:15px;margin: 1px 7px;font-weight: bolder;border: none;text-align: center;height: auto;">PARENT: MR & MRS BADMUS</h3>
+										</div>
+									</div> 
+								</div>	
+								<div class="detail-row" style="margin-bottom: 25px;">
+								<div class="profile-info" style="justify-self: center;width: 110%;background-color: transparent;"> 
+									<div class="profile-bottom" style="margin-bottom:0px;justify-content: center;justify-self: center;width: 95%;">
+										<h1 style="font-size:15px;text-align:center;color: black;">FEMI BADMUS</h1>
+										<div class="profile-info" style="justify-self: center;width: 100%;text-align: center;margin: 5px 0px;background-color: white; margin-top: -5px;padding: 7px 2px;">  
+											<div style="margin-left: 0px;"class="p1">
+												<h1 style="margin-top:-1.5px;font-size:17px;font-weight: bolder;color: white;text-align: center;"><%= data.FatherNo%></h1>
+												</div> 
+										</div>
+									</div> 
+								</div>
+								<div class="profile-info" style="justify-self: center;width: 110%;background-color: transparent;"> 
+									<div class="profile-bottom" style="margin-bottom:0px;justify-content: center;justify-self: center;width: 95%;">
+										<h1 style="font-size:15px;text-align:center;color: black;">CHINWE BADMUS</h1>
+										<div class="profile-info" style="justify-self: center;width: 100%;text-align: center;margin: 5px 0px;background-color: white; margin-top: -5px;padding: 7px 2px;">  
+											<div style="margin-left: 0px;"class="p2">
+												<h1 style="margin-top:-1.5px;font-size:17px;font-weight: bolder;color: white;text-align: center;"><%= data.MotherNo%></h1>
+												</div> 
+										</div>
+									</div> 
+								</div>
+							</div>
+        
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let opened = null;
+    const toggleVisibility = e => e.classList.toggle('show');
+
+    const handleDropdown = e => {
+      const clickedItem = e.parentElement.querySelector('.dropdown-menu');
+      toggleVisibility(clickedItem);
+
+      if (!opened) {
+        opened = clickedItem;
+      } else if (opened === clickedItem) {
+        opened = null;
+      } else {
+        toggleVisibility(opened);
+        opened = clickedItem;
+      }
+    };
+
+    const handleClick = e => {
+      if (e.target.classList.contains('dropDown')) {
+        handleDropdown(e.target);
+      } else if (opened) {
+        toggleVisibility(opened);
+        opened = null;
+      }
+    };
+
+    document.addEventListener('click', handleClick);
+  </script>
+</body>
+</html>

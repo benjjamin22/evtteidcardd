@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+condensed');
+html, body {
+    font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;  /* prevent horizontal scroll */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+.user-profile {
+  width: 100%;
+  height: 100vh;       /* take full screen height */
+  margin: 0;
+  border-radius: 0;    /* no rounded corners */
+  box-shadow: none;    /* no shadow */
+  background: #fefefe; /* or your background image/color */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+   min-height: 100dvh;
+}
+
+
+.profile-top {
+  background: url('op.JPG') center/cover no-repeat;
+  padding: 20px 0;
+  text-align: center;
+  
+}
+
+.logo-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 15px;
+}
+
+.lip {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.school-logo img {
+  max-width: 80%;
+  height: auto;
+}
+
+.profile-photo {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.photo-box {
+  border: 1px solid #cec3c3;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.1);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  max-width: 250px;
+  width: 100%;
+}
+.profile-bottom .profile-info:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.profile-bottom .profile-info .hover:hover {
+    background-color: rgb(113, 81, 228);
+}
+
+.photo-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.profile-info h1 {
+color:white;text-align:center;margin-bottom:0px;margin-top: 0px; line-height:2rem;font-size: 3rem;font-weight: bolder;
+}
+
+.profile-info h2 {
+color:white;text-align:center;margin-bottom:0px;line-height:2rem;font-size: 1.4rem;font-weight: bolder;margin-top: 2px;
+}
+
+.profile-info p {
+color:white;text-align:center;margin-bottom:0px;line-height:2rem;font-size: 13px;font-weight: bolder;margin-top: 2px;
+}
+
+.profile-info .mode {
+ margin-top:0px;margin-bottom:0px;line-height:1rem;color: yellow;text-align: center;font-size:15px"
+}
+
+.details {
+  padding: 0rem 1rem;
+  text-align: center;
+  background-color: #dcdcdc;   
+}
+
+.detail {
+  margin-bottom: 0rem;
+}
+
+.detail h3 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.detail p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: .3rem 0 0;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-around;
+  gap: .5rem;
+}
+
+.detail.small h3 {
+  font-size: 12px;
+}
+
+.detail.small p {
+  font-size: 16px;
+}
+
+.red {
+  color: red;
+}
+
+.social-list {
+  list-style: none;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.social-list li {
+  position: relative;
+}
+
+.social-list img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: .5rem 1rem;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  white-space: normal; /* allow wrapping */
+  word-break: break-word; /* break long text */
+  text-align: center;
+  max-width: clamp(150px, 60vw, 250px); /* responsive width */
+  overflow-wrap: anywhere;
+  box-sizing: border-box;
+}
+
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+/* Social colors */
+.dropdown-menu.fb { background: #1877f2; }
+.dropdown-menu.ig { background: #e1306c; }
+.dropdown-menu.tk { background: #010101; }
+.dropdown-menu.tw { background: #1da1f2; }
+
+.p1 {
+    background-color: black;
+    
+    padding: 0rem .5rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    max-width: 95%;
+    justify-content: center;
+}
+
+.p2 {
+    background-color: red;
+    
+    padding: 0rem .5rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    max-width: 95%;
+    justify-content: center;
+}
+
+.profile-bottom .profile-info {
+    background-color: white;
+    padding: .1rem;
+    margin-bottom: .1rem;
+    display: flex;
+    align-items: center;
+    max-width: 95%;
+    justify-content: center;
+    box-shadow: rgb(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 03)0px 8px 16px -8px;
+    transition: 0.5s ease;
+    border: 1px rgb(214, 211, 211) solid;
+    justify-self: center;
+    text-align: center;
+}
