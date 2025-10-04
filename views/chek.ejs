@@ -7,6 +7,7 @@
   <link rel="icon" href="data:;base64,=">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="/styo.css">
   <link rel="stylesheet" href="/cardo.css">
   <title><%= data.Aname.Name %></title>
 </head>
@@ -16,13 +17,9 @@
       
 					<!-- Top Section -->
 					<div class="profile-top">
-						<div class="logo-row">
-						<img class="lip" src="/ol.jpg" alt="">
-						</div>
 						<div class="school-logo">
-						<img src="/btyii.png" alt="school logo">
+						<img src="/britfinal.png" alt="school logo">
 						</div>
-					
 
 					<!-- Photo -->
 					<div class="profile-photo">
@@ -30,7 +27,12 @@
 						<img src="<%= data.image %>" alt="profile photo">
 						</div>
 					</div>
-				
+					<a style="text-decoration: none;" href="/search/<%=data._id%>"">
+									<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+										<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+										<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+									</svg>
+								</a>
 					<!-- Info -->
 					<div class="profile-info">
 						<h1><%= data.Aname.Name %></h1>

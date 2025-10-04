@@ -11,8 +11,6 @@ html, body {
 .container {
   display: flex;
   justify-content: center;
-  
-  
 }
 
 .user-profile {
@@ -50,9 +48,10 @@ html, body {
 }
 
 .school-logo img {
-  max-width: 70%;
-  width: 20rem;
+  max-width: 100%;
+  width: 27rem;
   height: auto;
+  margin-bottom: -1rem;
 }
 
 .profile-photo {
