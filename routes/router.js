@@ -51,6 +51,14 @@ router.get('/', function(req, res, next) {
     console.log(data)
   });
 
+    var accountanppo = path.join(process.cwd(),'./eve.json')
+  var accountsi = JSON.parse(fs.readFileSync(accountanppo ,'utf-8'));
+
+    router.get('/getalll', function(req, res, next) {
+    const data = accountsi;
+    res.json(data)
+  });
+
   var accountan = path.join(process.cwd(),'./data.json')
   var accounts = JSON.parse(fs.readFileSync(accountan,'utf-8'));
   //var accounts = JSON.parse(fs.readFileSync('./data.json','utf-8'));
