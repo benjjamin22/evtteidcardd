@@ -16,6 +16,57 @@
     "res":"Plot 20, Green Field Estate, Gwagalada, Lagos, Nigeria",
     "picturepath":"/image/bryit.jpg",
     "sn":268,"__v":0
+    },
+ {
+    "Aname":{"Name":"EMEKA","Mname":"ADEOLA","Surname":"AMADI"},
+    "_id":"10",
+    "class":"PRE-NURSERY",
+    "Birth":"4TH JULY, 2022",
+    "Gender":"MALE ",
+    "Bloodgroup":"O+",
+    "FatherNo":"08037772280 ",
+    "MotherNo":"08143080800",
+    "State":"IMO",
+    "LocalGovernment":"IKEDURU",
+    "image":"/image/600000.jpg",
+    "datefbirth":"11th Sept.,2022",
+    "res":"106, Ajao Estate, Royce Rd, Lagos, Nigeria",
+    "picturepath":"/image/bryit.jpg",
+    "sn":268,"__v":0
+    },
+ {
+    "Aname":{"Name":"AMINA","Mname":"IFEANYI","Surname":"AHMED"},
+    "_id":"9",
+    "class":"PRIMARY 5",
+    "Birth":"11TH SEPT., 2022",
+    "Gender":"FEMALE ",
+    "Bloodgroup":"O",
+    "FatherNo":"08037772280 ",
+    "MotherNo":"08143080800",
+    "State":"LAGOS",
+    "LocalGovernment":"EPE",
+    "image":"/image/600000.jpg",
+    "datefbirth":"11th Sept.,2022",
+    "res":"Plot 20, Green Field Estate, Gwagalada, Lagos, Nigeria",
+    "picturepath":"/image/bryit.jpg",
+    "sn":268,"__v":0
+    },
+ {
+    "Aname":{"Name":"KABIRU","Mname":"IFEANYI","Surname":"OWOLABI"},
+    "_id":"11",
+    "class":"PRE-NURSERY",
+    "Birth":"11TH SEPT., 2022",
+    "Gender":"FEMALE ",
+    "Bloodgroup":"O",
+    "FatherNo":"08037772280 ",
+    "MotherNo":"08143080800",
+    "State":"LAGOS",
+    "LocalGovernment":"EPE",
+    "image":"/image/600000.jpg",
+    "datefbirth":"11th Sept.,2022",
+    "res":"Plot 20, Green Field Estate, Gwagalada, Lagos, Nigeria",
+    "picturepath":"/image/bryit.jpg",
+    "sn":268,"__v":0
     }
 ]
 
