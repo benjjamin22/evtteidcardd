@@ -102,9 +102,29 @@ router.get('/', function(req, res, next) {
           
       }
   });
+
   router.post('/search', async (req,res) => {
     try{
-        var foundUser = accounts.find((data) => req.body.firstName === data.Aname.Name && req.body.MiddleName === data.Aname.Mname && req.body.SurName === data.Aname.Surname && req.body.ParentPhoneNo === data.ParentPhoneNo);
+          var foundUser = school.find((data) => req.body.firstName.toUpperCase() === data.Aname.Name && req.body.MiddleName.toUpperCase() === data.Aname.Mname && req.body.SurName.toUpperCase() === data.Aname.Surname ||  req.body.IdNo.toUpperCase() === data.IdNo);
+        if (foundUser) {
+        //req.session.user = foundUser.pine;
+            //res.render('result',{id:foundUser.pine});
+            res.render('check',{data:foundUser});
+            //res.send(`<!DOCTYPE html><html><body><h1 style="font-size:6rem; margin-top:8rem;text-align: center;">${foundUser.pine}</h1>
+               // </html>`)
+        } else {
+            res.render('ddx');
+        }
+   
+} catch{
+    res.send("Internal server error");
+    
+}
+});
+
+  router.post('/searchoo', async (req,res) => {
+    try{
+        var foundUser = school.find((data) => req.body.firstName === data.Aname.Name && req.body.MiddleName === data.Aname.Mname && req.body.SurName === data.Aname.Surname && req.body.ParentPhoneNo === data.ParentPhoneNo);
         if (foundUser) {
         //req.session.user = foundUser.pine;
             //res.render('result',{id:foundUser.pine});
