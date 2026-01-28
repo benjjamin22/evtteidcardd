@@ -109,7 +109,7 @@ router.get('/', function(req, res, next) {
         if (foundUser) {
         //req.session.user = foundUser.pine;
             //res.render('result',{id:foundUser.pine});
-            res.render('check',{data:foundUser});
+            res.render('chek',{data:foundUser});
             //res.send(`<!DOCTYPE html><html><body><h1 style="font-size:6rem; margin-top:8rem;text-align: center;">${foundUser.pine}</h1>
                // </html>`)
         } else {
