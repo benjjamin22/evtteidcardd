@@ -59,6 +59,25 @@ router.get('/', function(req, res, next) {
     res.json(data)
   });
 
+      router.get('/search/:id', function (req, res,next) {
+    try{
+        var id = req.params.id;
+        var foundUser = school.find((data) => id === data._id);
+        console.log(foundUser);
+        if (foundUser ) {
+            //req.session.user = foundUser.pine;
+            res.render('myid',{data:foundUser});
+            //res.render('sample');
+            } else {
+                res.render('ddx');
+            }
+       
+    } catch{
+        res.send("Internal server error");
+        
+    }
+  });
+
   var accountan = path.join(process.cwd(),'./data.json')
   var accounts = JSON.parse(fs.readFileSync(accountan,'utf-8'));
   //var accounts = JSON.parse(fs.readFileSync('./data.json','utf-8'));
