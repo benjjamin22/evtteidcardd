@@ -66,7 +66,7 @@ router.get('/', function(req, res, next) {
         console.log(foundUser);
         if (foundUser ) {
             //req.session.user = foundUser.pine;
-            res.render('myid',{data:foundUser});
+            res.render('error',{data:foundUser});
             //res.render('sample');
             } else {
                 res.render('ddx');
